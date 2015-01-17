@@ -15,3 +15,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+var fs = require("fs");
+var ES6Promise = require("es6-promise").Promise;
+
+var Server = require("./lib/Server");
+
+var contacts = {};
+try {
+    contacts = JSON.parse(fs.readFileSync("data.json"));
+} catch (e) {
+    console.log("Warning: Failed to load previous state");
+}
+
+var contactStore = {
+    getContact: function(number) {
+        return ES6Promise.resolve(contacts[number]);
+    },
+    putContact: function(number, contact) {
+        contacts[number] = contact;
+        return new ES6Promise(function(resolve) {
+            fs.writeFile("data.json", JSON.stringify(contacts), resolve);
+        });
+    }
+};
+
+new Server(contactStore, 8080);

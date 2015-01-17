@@ -1,0 +1,10 @@
+/.idea
+/protobuf
+/.gitattributes
+/.gitignore
+/.jscsrc
+/.jshintrc
+/.npmignore
+/.travis.yml
+/data.json
+/Gruntfile.js
