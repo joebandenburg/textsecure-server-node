@@ -1,0 +1,22 @@
+{
+  "name": "textsecure-server-node",
+  "version": "0.1.0",
+  "description": "A JavaScript node.js server for TextSecure",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "axolotl",
+    "textsecure"
+  ],
+  "author": "Joe Bandenburg <joe@bandenburg.com>",
+  "license": "LGPLv3",
+  "dependencies": {
+    "express": "~4.11.0"
+  }
+}
