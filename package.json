@@ -1,6 +1,6 @@
 {
   "name": "textsecure-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JavaScript node.js server for TextSecure",
   "main": "index.js",
   "directories": {
@@ -30,7 +30,6 @@
     "cors": "~2.5.2",
     "es6-promise": "^2.0.1",
     "express": "~4.11.0",
-    "morgan": "^1.5.1",
     "protobufjs": "~3.8.2",
     "ws": "~0.6.5"
   }
