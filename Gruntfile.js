@@ -21,5 +21,6 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask("check", ["jshint", "jscs"]);
-    grunt.registerTask("default", ["check"]);
+    grunt.registerTask("test", ["check"]);
+    grunt.registerTask("default", ["test"]);
 };
