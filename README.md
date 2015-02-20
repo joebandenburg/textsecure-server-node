@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/joebandenburg/textsecure-server-node.svg?branch=master)](https://travis-ci.org/joebandenburg/textsecure-server-node)
+
 An independent JavaScript implementation of a TextSecure server.
 
 Currently, this server is not complete and should not be used for anything other than testing. If you're looking for a
